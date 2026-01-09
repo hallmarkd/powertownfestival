@@ -14,34 +14,72 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Content", name: "body", widget: "markdown" }
 
-  - name: "sections"
-    label: "Sections"
-    folder: "content/sections"
+  # HERO Sections
+  - name: "hero_sections"
+    label: "Hero Sections"
+    folder: "content/sections/hero"
     create: true
-    summary: "{{type}} - {{title}}"  # shows type and title in the CMS sidebar
+    summary: "{{title}}"
     fields:
-      # Read-only component type for clarity
       - label: "Component Type"
         name: "component_type"
         widget: "string"
-        default: "Select Block Type"  # shows instruction for client
+        default: "Hero Section"
         readonly: true
-
-      - label: "Block type"
-        name: "type"
-        widget: "select"
-        options: ["hero", "testimonial", "gallery"]
-
       - label: "Title"
         name: "title"
         widget: "string"
-        default: ""  # leave empty so the client can set meaningful title per block
-
+        default: "Hero Section Title"
       - label: "Text"
         name: "text"
         widget: "text"
-        default: "Enter section text here"
+        default: "Enter hero text here"
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        default: "/images/placeholder.jpg"
 
+  # TESTIMONIAL Sections
+  - name: "testimonial_sections"
+    label: "Testimonial Sections"
+    folder: "content/sections/testimonial"
+    create: true
+    summary: "{{title}}"
+    fields:
+      - label: "Component Type"
+        name: "component_type"
+        widget: "string"
+        default: "Testimonial Section"
+        readonly: true
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        default: "Testimonial Title"
+      - label: "Text"
+        name: "text"
+        widget: "text"
+        default: "Enter testimonial text here"
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        default: "/images/placeholder.jpg"
+
+  # GALLERY Sections
+  - name: "gallery_sections"
+    label: "Gallery Sections"
+    folder: "content/sections/gallery"
+    create: true
+    summary: "{{title}}"
+    fields:
+      - label: "Component Type"
+        name: "component_type"
+        widget: "string"
+        default: "Gallery Section"
+        readonly: true
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        default: "Gallery Title"
       - label: "Image"
         name: "image"
         widget: "image"
