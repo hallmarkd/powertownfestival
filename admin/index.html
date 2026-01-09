@@ -1,27 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Decap CMS Admin</title>
-  
-  <!-- Netlify Identity Widget -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CMS</title>
+
+  <!-- Netlify Identity -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-  <!-- Netlify CMS -->
-  <script src="https://cdn.jsdelivr.net/npm/netlify-cms@^2.15.0/dist/netlify-cms.js"></script>
+  <!-- Decap CMS -->
+  <script src="https://unpkg.com/decap-cms@3.0.12/dist/decap-cms.js"></script>
 </head>
-<body>
-  <!-- CMS auto-mounts here -->
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      if (!window.CMS) {
-        console.error('Netlify CMS failed to load.');
-      } else {
-        console.log('Netlify CMS loaded successfully.');
-      }
-    });
-  </script>
-</body>
+<body></body>
 </html>
