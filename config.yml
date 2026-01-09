@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"
+    create: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  - name: "sections"
+    label: "Sections"
+    folder: "content/sections"
+    create: true
+    fields:
+      - { label: "Block type", name: "type", widget: "select", options: ["hero", "testimonial", "gallery"] }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Text", name: "text", widget: "text" }
+      - { label: "Image", name: "image", widget: "image" }
