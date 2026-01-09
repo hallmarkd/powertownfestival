@@ -1,6 +1,6 @@
 ---
 component_type: Hero Section
-title: Hero Section Title
+title: Goosebumps
 text: Enter hero text here
 image: /images/placeholder.jpg
 ---
