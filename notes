@@ -1,0 +1,9 @@
+//IMPORTANT
+git pull origin main < - - - - Make sure to do this or the clients changes will be overidden
+
+
+//pushing
+git add .
+git commit -m "Add fancy gallery styling and update admin scripts"
+git push origin main
+
