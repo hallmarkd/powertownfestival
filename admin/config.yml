@@ -18,9 +18,31 @@ collections:
     label: "Sections"
     folder: "content/sections"
     create: true
-    summary: "{{type}} - {{title}}"  # <-- show type and title in CMS list
+    summary: "{{type}} - {{title}}"  # shows type and title in the CMS sidebar
     fields:
-      - { label: "Block type", name: "type", widget: "select", options: ["hero", "testimonial", "gallery"] }
-      - { label: "Title", name: "title", widget: "string", default: "Enter section title here" }
-      - { label: "Text", name: "text", widget: "text", default: "Enter section text here" }
-      - { label: "Image", name: "image", widget: "image", default: "/images/placeholder.jpg" }
+      # Read-only component type for clarity
+      - label: "Component Type"
+        name: "component_type"
+        widget: "string"
+        default: "Hero Section"
+        readonly: true
+
+      - label: "Block type"
+        name: "type"
+        widget: "select"
+        options: ["hero", "testimonial", "gallery"]
+
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        default: "Enter section title here"
+
+      - label: "Text"
+        name: "text"
+        widget: "text"
+        default: "Enter section text here"
+
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        default: "/images/placeholder.jpg"
