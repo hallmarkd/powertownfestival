@@ -24,7 +24,7 @@ collections:
       - label: "Component Type"
         name: "component_type"
         widget: "string"
-        default: "Hero Section"
+        default: "Select Block Type"  # shows instruction for client
         readonly: true
 
       - label: "Block type"
@@ -35,7 +35,7 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
-        default: "Enter section title here"
+        default: ""  # leave empty so the client can set meaningful title per block
 
       - label: "Text"
         name: "text"
